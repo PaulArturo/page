@@ -1,3 +1,3 @@
 window.addEventListener('DOMContentLoaded', function() {
-    window.location.href = 'http://127.0.0.1:5500/index.html#img0';
+    window.location.href = 'https:/paulquispeweb.site/index.html#img0';
 });
