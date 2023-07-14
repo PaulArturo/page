@@ -1,7 +1,6 @@
 body{
     margin:0;
     padding: 0;
-    height: 1000vh;
     width: 100%;
 }
 header{
@@ -105,9 +104,9 @@ main{
     height: 100vh;
 }
 
-.slider{
+/*.slider{
     height: 100vh;
-}
+}*/
 
 .titulo{
     position: absolute;
@@ -131,17 +130,20 @@ main{
     text-align: center;
 }
 .contenido{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     height: 100%;
     width: 100%;
-    z-index: 1003;
+    z-index: 1001;
 }
 
 .images{
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 85vh;
+    /*height: 90vh;*/
     overflow: hidden;
 }
 
@@ -157,7 +159,8 @@ main{
     width: 100%;
 }
 .guia{
-    display: block;
+    flex-grow: 1;
+    /*display: block;*/
 }
 .guia ul{
     list-style: none;
@@ -167,7 +170,7 @@ main{
 }
 .guia ul li{
     display: flex;
-    margin: 1rem;
+    margin: 0rem 1rem;
 }
 .guia ul li a{
     width: 1.5rem;
@@ -192,3 +195,17 @@ main{
     from {opacity: .4} 
     to {opacity: 1}
 }  
+h1, p{
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    font-family: Arial;
+    color:gray
+}
+#product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titleproduct{
+}
