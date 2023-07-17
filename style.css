@@ -1,8 +1,10 @@
+/***********************global*************************/
 body{
     margin:0;
     padding: 0;
     width: 100%;
 }
+/***********************NavBar************************/
 header{
     position: fixed;
     background-color: #F2F3F4;
@@ -15,7 +17,6 @@ header{
     flex-grow: 1;
 }
 .menu{
-    /*width: 50%;*/
     display: flex;
 }
 .menu ul{
@@ -26,12 +27,8 @@ header{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    /*height: 100%;*/
-    /*width: 100%;*/
 }
 .menu ul li {
-    /*padding: 1rem;*/
-    /*width: 100%;*/
     height: 100%;
     text-align: center;
     flex-grow: 1;
@@ -88,12 +85,11 @@ header{
 .logo svg{
     width: 2rem;
 }
+/*********************NavBar end**********************/
 main{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-
 .main div{
     height: 80vh;
     max-height: 100vh;
@@ -103,55 +99,29 @@ main{
 .page{
     height: 100vh;
 }
-
-/*.slider{
-    height: 100vh;
-}*/
 .texto{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-/*h1, p{
-    display: flex;
-    justify-content: center;
+.texto .descripcion{
+    font-family: system-ui;;
     font-size: 100%;
-    font-family: Arial;
-    color:gray
+    width: 40rem;
+    text-align: center;
+    color: #8a9095;
 }
-#product{
+.texto .title{
+    font-family: arial;
+    font-size: 100%;
+    color: #374048;
+}
+/**********************Slider**********************/
+.slider{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}*/
-
-.titulo{
-    position: absolute;
-    z-index: 1004;
-    width: 30%;
-    top: 10%;
-    left: 35%;
-}
-
-.titulo h1{
-    text-align: center;
-}
-.descripcion{
-    position: absolute;
-    width: 40%;
-    z-index: 1004;
-    left: 30%;
-    top: 20%;
-}
-.descripcion h2{
-    text-align: center;
-}
-.contenido{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    z-index: 1001;
+    /*width: 100%;*/
+    /*height: 65%;*/
 }
 
 .images{
@@ -159,7 +129,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*height: 90vh;*/
     overflow: hidden;
 }
 
@@ -170,13 +139,12 @@ main{
     animation-name: fade;
     animation-duration: 1.5s;
     display: block;
-    position: relative;
-    z-index: 1005;
+    /*position: relative;*/
+    /*z-index: 1005;*/
     width: 100%;
 }
 .guia{
     flex-grow: 1;
-    /*display: block;*/
 }
 .guia ul{
     list-style: none;
@@ -198,19 +166,114 @@ main{
 .guia ul li a:hover{
     background-color: #ABB2B9;
 }
-.imagen img{
-    width: 100%;
-}
-.imagen{
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-}
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-}  
-/*.titleproduct{
+} 
+/********************Slider end********************/ 
 
-}*/
+/**********************Images**********************/
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+}
+/********************Images end********************/
+
+/*******************Description********************/
+.description{
+    
+}
+.svg{
+    
+}
+/*****************Description end******************/
+
+/*********************global end***********************/
+
+/******************************************************/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#texto_home{
+    margin-top: 4rem;
+}
+#slider_home{
+    width: 100%;
+    height: 68%;
+}
+/****************************************************/
+#product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#texto_product{
+    margin-top: 4rem;
+}
+#img_product{
+    width: 60vh;
+    height: 60vh;
+}
+#interactive_product{
+    position: relative;
+}
+.element {
+    position: absolute;
+}
+.texto_element{
+    display: none;
+}
+.element button{
+    border: none;
+    background-color: #0084ff;
+    border-radius: 50rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}/*arreglalo*/
+#a{
+    top: 9rem;
+    left: 10rem;
+}
+#a:focus + #a .texto_element{
+    display: block;
+}
+#b{
+    top: 22rem;
+    left: 9rem; 
+}
+#b:focus{
+
+}
+#c{
+    top: 4rem;
+    left: 20rem;
+}
+#c:focus{
+
+}
+#d{
+    top: 18rem;
+    left: 22rem;
+}
+#d:focus{
+
+}
+/****************************************************/
+#product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*arreglalo*/
+#features_description{
+    display: flex;
+    justify-content: space-around;
+}
