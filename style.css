@@ -186,10 +186,7 @@ main{
 
 /*******************Description********************/
 .description{
-    
-}
-.svg{
-    
+    width: 30%;
 }
 /*****************Description end******************/
 
@@ -237,37 +234,42 @@ main{
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;
+    
 }/*arreglalo*/
 #a{
     top: 9rem;
     left: 10rem;
 }
-#a:focus + #a .texto_element{
-    display: block;
-}
 #b{
     top: 22rem;
     left: 9rem; 
-}
-#b:focus{
-
 }
 #c{
     top: 4rem;
     left: 20rem;
 }
-#c:focus{
-
-}
 #d{
     top: 18rem;
     left: 22rem;
 }
-#d:focus{
-
+.element button:focus + .texto_element , .texto_element p{
+    display: block;
+    color: #F2F3F4;
+    background-color: darkorange;
+    animation-name: fade;
+    animation-duration: 0.6s;
 }
 /****************************************************/
-#product{
+#how_it_works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#info{
+    display: flex;
+}
+/****************************************************/
+#feature{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,5 +277,10 @@ main{
 /*arreglalo*/
 #features_description{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+#features_scroll{
+    display: flex;
+    align-items: center;
 }
