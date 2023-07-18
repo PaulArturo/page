@@ -61,11 +61,12 @@ header{
     font-family: Arial;
     border: none;
     font-size: 100%;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2.5rem;
     transition: background-color 0.6s ease;
+    color: #F2F3F4;
 }
 .botton button:hover{
-    background-color:darkorange;
+    background-color:#8a9095;
     border: none;
     cursor: pointer;
 }
@@ -102,13 +103,12 @@ main{
 .texto{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .texto .descripcion{
-    font-family: system-ui;;
+    font-family: system-ui;
     font-size: 100%;
-    width: 40rem;
-    text-align: center;
+    /*width: 40rem;*/
+    /*text-align: center;*/
     color: #8a9095;
 }
 .texto .title{
@@ -200,6 +200,15 @@ main{
 }
 #texto_home{
     margin-top: 4rem;
+    width: 40rem;
+    text-align: center;
+}
+#texto_home h1{
+    font-size: 300%;
+    margin:0.5rem;
+}
+#texto_home p{
+    font-size: 150%;
 }
 #slider_home{
     width: 100%;
@@ -213,6 +222,15 @@ main{
 }
 #texto_product{
     margin-top: 4rem;
+    text-align: center;
+    width: 40rem;
+}
+#texto_product h1{
+    font-size: 250%;
+    margin: 0;
+}
+#texto_product p{
+    font-size: 150%;
 }
 #img_product{
     width: 60vh;
@@ -234,8 +252,10 @@ main{
     width: 1.5rem;
     height: 1.5rem;
     cursor: pointer;
-    
-}/*arreglalo*/
+    color:#F2F3F4;
+    font-size: 110%;
+    transition: color 1s ease;
+}
 #a{
     top: 9rem;
     left: 10rem;
@@ -252,35 +272,111 @@ main{
     top: 18rem;
     left: 22rem;
 }
-.element button:focus + .texto_element , .texto_element p{
+.element button:focus + .texto_element {
+    padding-inline: 1rem;
+    border-radius: 10rem;
     display: block;
     color: #F2F3F4;
     background-color: darkorange;
     animation-name: fade;
-    animation-duration: 0.6s;
+    animation-duration: 0.5s;
+    /*border-radius: 5rem;*/
+}
+.element button:hover{
+    color:#374048
 }
 /****************************************************/
 #how_it_works{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+#main_text{
+    width: 50rem;
+}
+#main_text p{
+    font-size: 150%;
+}
+#main_text h1{
+    font-size: 250%;
 }
 #info{
     display: flex;
+    flex-wrap: wrap;
 }
-/****************************************************/
-#feature{
+.info_element{
+    margin-top: 20%;
+    width: 33,33333333333%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.info_element img{
+    width: 7rem;
+}
+.info_element .texto{
+    width: 20rem;
+}
+/****************************************************/
+#features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text_features{
+    width: 50rem;
+    text-align: center;
+}
+#text_features p{
+    font-size: 150%;
+}
+#text_features h1{
+    font-size: 250%;
 }
 /*arreglalo*/
 #features_description{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 50rem;
 }
+#features_description .texto h1{
+    font-size: 150%;
+}
+/******************************************************/
 #features_scroll{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
+
+#features_description_scroll_left, #features_description_scroll_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#features_description_scroll_left h1, #features_description_scroll_right h1{
+    font-size: 150%;
+}
+#features_description_scroll_left .description, #features_description_scroll_right .description{
+    width: 20rem;
+    padding-inline: 2rem;
+}
+/*****************************************************/
+#features_scroll_scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#features_scroll_scroll .texto{
+    width: 45rem;
+}
+#features_scroll_scroll .texto h1{
+    font-size: 250%;
+}
+#features_scroll_scroll .texto p{
+    font-size: 150%;
+}
+
