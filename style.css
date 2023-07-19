@@ -1,4 +1,7 @@
 /***********************global*************************/
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin:0;
     padding: 0;
@@ -86,6 +89,7 @@ header{
 .logo svg{
     width: 2rem;
 }
+
 /*********************NavBar end**********************/
 main{
     display: flex;
@@ -187,6 +191,12 @@ main{
 /*******************Description********************/
 .description{
     width: 30%;
+    display: flex;
+}
+.description svg{
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
 }
 /*****************Description end******************/
 
@@ -378,5 +388,134 @@ main{
 }
 #features_scroll_scroll .texto p{
     font-size: 150%;
+}
+#products{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#products img{
+    height: 30rem;
+    object-fit: cover;
+}
+.name_price h2{
+    color: #0084ff;
+    font-family: arial;
+    font-size: 1.3rem;
+}
+.name_price p{
+    font-family: arial;
+    color: #b4bcc3;;
+}
+.name_price h3{
+    color: #F5B041;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name_price button{
+    border-radius: 50rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #F2F3F4;
+    color:#ABB2B9;
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+.name_price button:hover{
+    padding-inline: 1rem;
+    color: #F2F3F4;
+    background-color: #8a9095;
+}
+/*********************************************************/
+#features_scroll_scroll_scroll{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#features_scroll_scroll_scroll .texto{
+    width: 35rem;
+}
+#features_scroll_scroll_scroll .texto h1{
+    margin: 0;
+    text-align: justify;
+    font-size: 250%;
+}
+#features_scroll_scroll_scroll .texto p{
+    text-align: justify;
+    font-size: 150%;
+}
+#list_avantages ul{
+    padding: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #696f74;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#features_scroll_scroll_scroll img{
+    height: 35rem;
+}
+/*#list_avantages ul li::before{
+    content:"";
+}*/
+/*********************************************************/
+#features_scroll_scroll_scroll_scroll{
+    display: flex;
+    flex-wrap: wrap;
+}
+#features_scroll_scroll_scroll_scroll div{
+    width: 50%;
+}
+#features_scroll_scroll_scroll_scroll .texto{
+    display: flex;
+    align-items: center;
+}
+#features_scroll_scroll_scroll_scroll h1{
+    font-size: 2rem;
+}
+#features_scroll_scroll_scroll_scroll .descripcion{
+    width: 30rem;
+    font-size: 1.2rem;
+}
+/*********************************************************/
+#reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+#reviews_text h1{
+    font-size: 2.5rem;
+}
+#reviews_text p{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#extend_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#extend_text p{
+    font-size: 1.2rem;
+}
+#marcas{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #374048;
+}
+#marcas_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#marcas_name .img{
+    flex-grow: 1;
 }
 
