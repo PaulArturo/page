@@ -1,6 +1,6 @@
 /***********************global*************************/
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;  
 }
 body{
     margin:0;
@@ -37,16 +37,19 @@ header{
     flex-grow: 1;
     display: flex;
 }
-.menu ul li button {
+.menu ul li a {
     padding: 0;
     flex-grow: 1;
     font-family: Arial;
     font-size: 1.2rem;
     color: #ABB2B9;
-    border: none;
     transition: color 0.5s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.menu ul li button:hover{
+.menu ul li a:hover{
     color: black;
     cursor: pointer;
 }
@@ -139,6 +142,9 @@ main{
 .images img {
     display: none;
 }
+.images img:nth-child(1){
+
+}
 .images img:target{
     animation-name: fade;
     animation-duration: 1.5s;
@@ -202,7 +208,7 @@ main{
 
 /*********************global end***********************/
 
-/******************************************************/
+/**********************Home*************************/
 #home{
     display: flex;
     flex-direction: column;
@@ -224,7 +230,7 @@ main{
     width: 100%;
     height: 68%;
 }
-/****************************************************/
+/**********************Product**************************/
 #product{
     display: flex;
     flex-direction: column;
@@ -295,7 +301,7 @@ main{
 .element button:hover{
     color:#374048
 }
-/****************************************************/
+/********************Product scroll***********************/
 #how_it_works{
     display: flex;
     flex-direction: column;
@@ -328,13 +334,14 @@ main{
 .info_element .texto{
     width: 20rem;
 }
-/****************************************************/
+/*********************Features************************/
 #features{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 #text_features{
+    margin-top: 4rem;
     width: 50rem;
     text-align: center;
 }
@@ -354,7 +361,7 @@ main{
 #features_description .texto h1{
     font-size: 150%;
 }
-/******************************************************/
+/**********************features_scroll************************/
 #features_scroll{
     display: flex;
     flex-direction: row;
@@ -373,7 +380,7 @@ main{
     width: 20rem;
     padding-inline: 2rem;
 }
-/*****************************************************/
+/***********************features_scroll_scroll**********************/
 #features_scroll_scroll{
     display: flex;
     flex-direction: column;
@@ -426,7 +433,7 @@ main{
     color: #F2F3F4;
     background-color: #8a9095;
 }
-/*********************************************************/
+/****************features_scroll_scroll_scroll*******************/
 #features_scroll_scroll_scroll{
     display: flex;
     flex-direction:row;
@@ -464,7 +471,7 @@ main{
 /*#list_avantages ul li::before{
     content:"";
 }*/
-/*********************************************************/
+/**********************features_scroll_scroll_scroll_scroll********************/
 #features_scroll_scroll_scroll_scroll{
     display: flex;
     flex-wrap: wrap;
@@ -483,12 +490,17 @@ main{
     width: 30rem;
     font-size: 1.2rem;
 }
-/*********************************************************/
+/*********************reviews**************************/
 #reviews{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     text-align: center;
+}
+#reviews_text{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 40rem;
 }
 #reviews_text h1{
     font-size: 2.5rem;
@@ -497,14 +509,18 @@ main{
     font-size: 1.5rem;
     margin: 0;
 }
-
 #extend_text{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 4rem;
 }
 #extend_text p{
     font-size: 1.2rem;
+}
+#extend_text {
+    width: 70rem;
+    margin-bottom: 10rem;
 }
 #marcas{
     font-family: Arial, Helvetica, sans-serif;
