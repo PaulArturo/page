@@ -131,9 +131,9 @@ header{
     animation-name: fade;
     animation-duration: 1.5s;
     display: block;
-    /*position: relative;*/
-    /*z-index: 1005;*/
     width: 100%;
+    width: 1663px;
+    height: 935px;
 }
 .guia{
     flex-grow: 1;
